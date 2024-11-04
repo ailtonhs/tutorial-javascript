@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que o JavaScript pode fazer</title>
+</head>
+<body>
+    <h2>O que o JavaScript pode fazer</h2>
+    <p>JavaScript pode alterar valores de atributos HTML.</p>
+
+    <p>Neste caso, o JavaScript altera o valor do atributo src (fonte) de uma imagem.</p>
+
+    <button>Acender</button>
+    <img src="pic_bulboff.gif">
+    <button>Apague a luz</button>
+
+    <script>
+        const button = document.getElementsByTagName("button");
+
+        button[0].addEventListener("click", acende => {
+            const img = document.getElementsByTagName("img")[0];
+
+            img.src = "pic_bulbon.gif";
+        });
+
+        button[1].addEventListener("click", apague => {
+            const img = document.getElementsByTagName("img")[0];
+            img.src = "pic_bulboff.gif";
+        })
+    </script>
+</body>
+</html>
