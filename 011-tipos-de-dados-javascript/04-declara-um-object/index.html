@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de dados JavaScript</title>
+</head>
+<body>
+    <h1>Object JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+        const pessoa = {
+            primeiroNome : "John",
+            sobrenome : "Doe",
+            idade : 50,
+            corDosOlhos : "blue"
+        };
+
+        let res = document.getElementById("demo");
+        res.innerHTML = `${pessoa.primeiroNome} ${pessoa.sobrenome} tem ${pessoa.idade} anos e seus olhos são ${pessoa.corDosOlhos}`;
+    </script>
+</body>
+</html>

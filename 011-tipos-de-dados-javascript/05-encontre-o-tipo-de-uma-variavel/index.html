@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de dados JS</title>
+</head>
+<body>
+    <h1>Tipos de dados JavaScript</h1>
+    <p>O operador typeof</p>
+
+    <p>O operador typeof retorna o tipo de uma variável ou expresão.</p>
+    <p id="demo"></p>
+
+    <script>
+        let res = document.getElementById("demo");
+
+        res.innerHTML = typeof "João" + "<br>";
+        res.innerHTML += typeof ("João " + "Silva") + "<br>";
+        res.innerHTML += typeof 3.14 + "<br>";
+        res.innerHTML += typeof true + "<br>";
+        res.innerHTML += typeof false + "<br>";
+        res.innerHTML += typeof 1234n + "<br>";
+        res.innerHTML += typeof x;
+    </script>
+</body>
+</html>
