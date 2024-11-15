@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições JavaScript</title>
+</head>
+
+<body>
+    <h1>JavaScript switch</h1>
+    <p id="demo"></p>
+
+    <script>
+        let diaAtual = new Date().getDay();
+        let diaDaSemana;
+        let res = document.getElementById("demo");
+
+        switch (diaAtual) {
+            case 0:
+                diaDaSemana = "Hoje é domingo";
+                break;
+
+            case 1:
+                diaDaSemana = "Hoje é segunda";
+                break;
+
+            case 2:
+                diaDaSemana = "Hoje é terça";
+                break;
+
+            case 3:
+                diaDaSemana = "Hoje é quarta";
+                break;
+
+            case 4:
+                diaDaSemana = "Hoje é quinta";
+                break;
+
+            case 5: 
+                diaDaSemana = "Hoje é sexta";
+                break;
+
+            case 6: 
+                diaDaSemana = "Hoje é sabado";
+                break;
+        };
+        res.innerHTML = diaDaSemana;
+
+    </script>
+</body>
+
+</html>
