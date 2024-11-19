@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript Math.random()</h1>
+    <p id="demo"></p>
+
+    <script>
+        let texto;
+        let res = document.getElementById("demo");
+
+        if (Math.random() < 0.5) {
+            texto = "<a href='https://w3schools.com'> VisiteW3Sclools</a>";
+        } else {
+            texto = "<a href='https://wwf.org'>Visitewwf</a>";
+        }
+
+        res.innerHTML = texto;
+    </script>
+</body>
+</html>

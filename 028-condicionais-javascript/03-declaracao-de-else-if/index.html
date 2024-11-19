@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript if .. else if</h1>
+    <p>Uma saudação baseada no tempo:</p>
+    <p id="demo"></p>
+
+    <script>
+        let hora = new Date().getHours();
+        let res = document.getElementById("demo");
+        let saudacao;
+
+        if (hora < 12) {
+            saudacao = "Bom dia!"
+        } else if (hora <= 18) {
+            saudacao = "Boa tarde!";
+        } else {
+            saudacao = "Boa noite!";
+        }
+
+        res.innerHTML = saudacao;
+    </script>
+</body>
+</html>

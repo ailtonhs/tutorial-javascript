@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <h1>Boolean JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+        let res = document.getElementById("demo");
+        res.innerHTML = "100 é " + Boolean(100) + "<br>";
+        res.innerHTML += "3.14 é " + Boolean(3.14) + "<br>";
+        res.innerHTML += "-15 é " + Boolean(-15) + "<br>";
+        res.innerHTML += "Qualque string (não vazia) é " + Boolean("Ola") + "<br>";
+        res.innerHTML += "Ate mesmo a string 'false' é " + Boolean("false") + "<br>";
+        res.innerHTML += "Qualque expressão (exceto zero) é " + Boolean(1 + 7 + 3.14);
+    </script>
+</body>
+</html>

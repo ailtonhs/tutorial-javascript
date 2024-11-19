@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que o JavaScript pode fazer</title>
+</head>
+<body>
+    <h2>O que o JavaScript pode fazer?</h2>
+
+    <p>JavaScript pode alterar o conteúdo HTML.</p>
+
+    <button>Clique em mim!</button>
+
+    <script>
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", minhaFuncao => {
+            const res = document.querySelector("p");
+
+            res.innerHTML = "Olá, JavaScritp!";
+        })
+    </script>
+</body>
+</html>

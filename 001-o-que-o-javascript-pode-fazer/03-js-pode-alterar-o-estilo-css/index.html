@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que o JavaScript pode fazer</title>
+</head>
+<body>
+    <h2>O que o JavaScript pode fazer?</h2>
+
+    <p>O JavaScript pode laterar o estilo de um elemeento HTML.</p>
+
+    <button>Clique em mim!</button>
+
+    <script>
+        const button = document.getElementsByTagName("button");
+        button[0].addEventListener("click", minhaFuncao => {
+            const paragrafo = document.getElementsByTagName("p");
+
+            paragrafo[0].style.fontSize = "40px";
+        })
+    </script>
+</body>
+</html>
