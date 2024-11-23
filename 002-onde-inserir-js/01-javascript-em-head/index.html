@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde inserir JavaScript</title>
+    <script>
+        function resultado(mensagem) {
+            document.getElementsByTagName("p")[0].innerHTML = mensagem;
+        }
+        function minhaFuncao() {
+            resultado(`Parágrafo alterado!`);
+        }
+    </script>
+</head>
+<body>
+    <h3>Demostração JavaScript no Head</h3>
+    <p id="demo">Um parágrafo.</p>
+    <button onclick="minhaFuncao()">Clique em mim!</button>
+</body>
+</html>
