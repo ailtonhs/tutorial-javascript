@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos JavaScript</title>
+</head>
+<body>
+    <h3>Objetos JavaScript</h3>
+    <p>Criando um objeto.</p>
+    <p id="demo"></p>
+
+    <script>
+        const car = {
+            tipo: "Fiat",
+            modelo: "500",
+            cor: "braco"
+        };
+
+        document.getElementById("demo").innerHTML = "O tipo de carro é " + car.tipo + ".<br>";
+
+        document.getElementById("demo").innerHTML += "A cor do carro é " + car.cor + ".";
+    </script>
+</body>
+</html>

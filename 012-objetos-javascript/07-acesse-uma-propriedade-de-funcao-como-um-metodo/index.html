@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectos JavaScript</title>
+</head>
+<body>
+    <h3>Objetos JavaScript</h3>
+    <p>Objetos método de oobjeto é uma definição de função, armazenada como um valor de propriedade.</p>
+
+    <script>
+        let novoP = document.createElement("p");
+        
+        document.body.appendChild(novoP);
+
+        novoP.setAttribute('id', 'demo');
+
+        const pessoa = {
+            nome: "John",
+            sobrenome: "Doe",
+            id: 5566,
+            nomeCompleto: function () {
+                return `${this.nome} ${this.sobrenome}.`
+            }
+        };
+
+        document.getElementById("demo").innerHTML = pessoa.nomeCompleto();
+    </script>
+</body>
+</html>
