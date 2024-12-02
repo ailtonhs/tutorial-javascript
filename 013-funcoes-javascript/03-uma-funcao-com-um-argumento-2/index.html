@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+</head>
+<body>
+    <h3>Funções JavaScript</h3>
+    <p>Quando você clica em um dos botões, uma função será chamada. A função exibirá o argumento que pe passado a ela.</p>
+
+    <form>
+        <input type="button" value="De manhâ" onclick="minhaFuncao('Bom dia!')">
+        <input type="button" value="Á noite" onclick="minhaFuncao('Boa noite!')">
+    </form>
+    <p id="demo"></p>
+
+    <script>
+        function minhaFuncao(txt) {
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

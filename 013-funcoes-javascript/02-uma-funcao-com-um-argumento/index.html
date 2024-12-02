@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+</head>
+<body>
+    <p>Chame a função clicando no botão abaixo.</p>
+    <p id="demo"></p>
+    <button onclick="minhaFuncao('Harry Potter', 'Mágico')
+    ">Clique em mim!</button>
+
+    <script>
+       function minhaFuncao (nome, trabalho) {
+        document.getElementById("demo").innerHTML = "Bem-vindo " + nome + ", o " + trabalho + "."
+       }
+
+
+    </script>
+</body>
+</html>

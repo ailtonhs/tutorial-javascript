@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+</head>
+<body>
+    <h3>Funções JavaScript</h3>
+    <p>Invoque (chame) uma função que converte de Fahrenheit para Celsius:</p>
+    <p id="demo"></p>
+
+    <script>
+        function paraCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+
+        let valor = paraCelsius(77);
+        document.getElementById("demo").innerHTML = valor;
+    </script>
+</body>
+</html>
